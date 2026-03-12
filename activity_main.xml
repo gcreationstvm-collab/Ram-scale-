@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HC-05 Weight Scale"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading paired devices..."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:textColor="#555555"/>
+
+    <ListView
+        android:id="@+id/deviceListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+        android:padding="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:enabled="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/demoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEMO MODE"
+        android:backgroundTint="#9E9E9E"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
